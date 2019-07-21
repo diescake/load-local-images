@@ -6,7 +6,7 @@ Display images loaded from local data.
 
 ## DEMO
 
-* https://app.netlify.com/sites/load-local-images/overview
+* https://load-local-images.netlify.com/
 
 ## How to start
 
