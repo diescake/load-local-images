@@ -21,7 +21,7 @@ const input = document.querySelector('input[type="file"]') as HTMLInputElement
 input.addEventListener('change', async () => {
   // NOTE: The "files" ensures non-null whenever the input is selected from input[type="file"]
   const files = Array.from(input.files!)
-  const buffers = await Promise.all(files.map(file => fetchFileBuffer(file)))
+  const buffers = await Promise.all(files.map(fetchFileBuffer))
 
   buffers.forEach(appendNewImage)
 })
