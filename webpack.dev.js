@@ -2,7 +2,6 @@
 const webpack = require('webpack')
 const path = require('path')
 
-const DotEnv = require('dotenv-webpack')
 const { param, common } = require('./webpack.common.js')
 /* eslint-enable */
 
@@ -25,13 +24,7 @@ const extConfig = {
   },
 }
 
-const extPlugins = [
-  new webpack.HotModuleReplacementPlugin(),
-  new DotEnv({
-    path: path.resolve(__dirname, `${param.dotEnvPath}/development.env`),
-    safe: false,
-  }),
-]
+const extPlugins = [new webpack.HotModuleReplacementPlugin()]
 
 const commonConfig = common(false)
 

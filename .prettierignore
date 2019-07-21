@@ -1,7 +1,0 @@
-package.json
-package-lock.json
-yarn.lock
-storybook-static/
-public/
-node_modules/
-coverage/

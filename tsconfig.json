@@ -23,7 +23,7 @@
     // FIXME: If enable this option, webpack-dev-server gets error in `yarn start`
     "checkJs": false,
 
-    "jsx": "react",
+    // "jsx": "react",
     // "jsxFactory": "React.createElement",
 
     "experimentalDecorators": true,
